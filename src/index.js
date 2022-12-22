@@ -7,8 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import { createClient, JitsuProvider } from "@jitsu/react";
 
 const jitsuClient = createClient({
-  tracking_host: "127.0.0.1:8000",
-  key: "js.jnyppimcfbi8n6ts347s3u.d3mytdjj0zjyc58bq2poeb",
+  tracking_host: "http://localhost:8001",
+  key: "js.pz37tmrvsdopr4zb2ulg5v.ho3q5caf0q9eftlc6ma94",
   // See Jitsu SDK parameters section for more options
 });
 
