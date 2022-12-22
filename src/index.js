@@ -4,10 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { createClient, JitsuProvider } from "@jitsu/react";
+
+const jitsuClient = createClient({
+  tracking_host: "127.0.0.1:8000",
+  key: "js.jnyppimcfbi8n6ts347s3u.d3mytdjj0zjyc58bq2poeb",
+  // See Jitsu SDK parameters section for more options
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <JitsuProvider client={jitsuClient}>
+      <App />
+    </JitsuProvider>
   </React.StrictMode>
 );
 
